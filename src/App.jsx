@@ -1,7 +1,12 @@
 import React from "react";
+import Login from "./pages/Login";
 
 const App = () => {
-  return <div className="mb-2 text-2xl font-bold text-red-600">App</div>;
+  return (
+    <div>
+      <Login />
+    </div>
+  );
 };
 
 export default App;
