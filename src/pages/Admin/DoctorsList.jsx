@@ -8,6 +8,7 @@ const DoctorList = () => {
   useEffect(() => {
     getAllDoctors();
   }, [aToken]);
+
   return (
     <div>
       <div className="grid grid-cols-5 gap-4 px-3 pt-5 mx-10 sm:px-0 ">

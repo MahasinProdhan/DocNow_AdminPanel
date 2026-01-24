@@ -40,7 +40,7 @@ const AddDoctor = () => {
       formData.append("about", about);
       formData.append(
         "address",
-        JSON.stringify({ line1: address1, line2: address2 })
+        JSON.stringify({ line1: address1, line2: address2 }),
       );
 
       //console log form data
@@ -52,7 +52,7 @@ const AddDoctor = () => {
       const { data } = await axios.post(
         backendUrl + "/api/admin/add-doctor",
         formData,
-        { headers: { aToken } }
+        { headers: { aToken } },
       );
       if (data.success) {
         toast.success(data.message);
